@@ -16,7 +16,6 @@ class App extends Component {
 		const naranja = {
 			color: "white",
 			backgroundColor: "#ff4500"
-			
 		}
 		
 		const morado = {
@@ -39,6 +38,10 @@ class App extends Component {
 		const gris = {
 			backgroundColor: "#828282"
 		}
+		
+		const grisTexto = {
+			color: "#9c9c9c"
+		}
 	
 		const blanco = {
 			backgroundColor: "#fff"
@@ -48,13 +51,13 @@ class App extends Component {
 			<Row className="App">
 			<Row>
 
-			<PrimerElemento tituloCard="20"  parrafo="New followers added this month" />
+			<PrimerElemento colorTexto={grisTexto} tituloCard="20"  parrafo="New followers added this month" />
 
-			<PrimerElemento tituloCard="$1250" parrafo="Average Monthly income" />
+			<PrimerElemento colorTexto={grisTexto} tituloCard="$1250" parrafo="Average Monthly income" />
 
-			<PrimerElemento tituloCard="$13865" parrafo="Yearly Income Goal" />
+			<PrimerElemento colorTexto={grisTexto} tituloCard="$13865" parrafo="Yearly Income Goal" />
 
-			<PrimerElemento style={naranja} className="texto-blanco"  tituloCard="18°" parrafo="París" />
+			<PrimerElemento style={naranja}   tituloCard="18°" parrafo="París" />
 
 			</Row>
 			<Row>

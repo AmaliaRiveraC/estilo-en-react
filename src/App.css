@@ -19,14 +19,14 @@ body {
 }
 
 .Gran-card {
-	height: 50vh;
+	height: 60vh;
 	margin: 0;
 	width: 100%;
 	
 }
 
 .mitad-gran {
-	height: 20vh;
+	height: 18vh;
 	margin: 0;
 	width: 100%;
 }
@@ -56,6 +56,9 @@ body {
     background-color: #fff;
 }
 
+.espacio {
+	padding-bottom: 5%;
+}
 
 
 .gris-texto {

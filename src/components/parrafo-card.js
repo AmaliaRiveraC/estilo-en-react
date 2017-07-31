@@ -20,45 +20,37 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactMaterialize = require('react-materialize');
 
-var _parrafoCardJsx = require('./parrafo-card.jsx');
+var ParrafoCard = (function (_Component) {
+   _inherits(ParrafoCard, _Component);
 
-var _parrafoCardJsx2 = _interopRequireDefault(_parrafoCardJsx);
+   function ParrafoCard() {
+      _classCallCheck(this, ParrafoCard);
 
-var PrimerElemento = (function (_Component) {
-   _inherits(PrimerElemento, _Component);
-
-   function PrimerElemento() {
-      _classCallCheck(this, PrimerElemento);
-
-      _get(Object.getPrototypeOf(PrimerElemento.prototype), 'constructor', this).apply(this, arguments);
+      _get(Object.getPrototypeOf(ParrafoCard.prototype), 'constructor', this).apply(this, arguments);
    }
 
-   _createClass(PrimerElemento, [{
+   _createClass(ParrafoCard, [{
       key: 'render',
       value: function render() {
          return _react2['default'].createElement(
             _reactMaterialize.Col,
-            { s: 3, m: 3 },
+            { s: 12, m: 12 },
             _react2['default'].createElement(
-               _reactMaterialize.CardPanel,
-               { style: this.props.style, className: 'espacio' },
-               _react2['default'].createElement(
-                  'h3',
-                  null,
-                  this.props.tituloCard
-               ),
-               _react2['default'].createElement(
-                  'p',
-                  { style: this.props.colorTexto },
-                  this.props.parrafo
-               )
+               'h3',
+               null,
+               this.props.tituloCard
+            ),
+            _react2['default'].createElement(
+               'p',
+               { style: this.props.colorTexto },
+               this.props.parrafo
             )
          );
       }
    }]);
 
-   return PrimerElemento;
+   return ParrafoCard;
 })(_react.Component);
 
-exports['default'] = PrimerElemento;
+exports['default'] = ParrafoCard;
 module.exports = exports['default'];
