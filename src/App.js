@@ -14,8 +14,9 @@ class App extends Component {
 	
 	render() {
 		const naranja = {
-			backgroundColor: "#ff4500",
-			color: "white"
+			color: "white",
+			backgroundColor: "#ff4500"
+			
 		}
 		
 		const morado = {
@@ -34,8 +35,15 @@ class App extends Component {
 		const rosa = {
 			backgroundColor: "#ff1493"
 		}
+		
+		const gris = {
+			backgroundColor: "#828282"
+		}
 	
-		return (
+		const blanco = {
+			backgroundColor: "#fff"
+		}
+			return (
 
 			<Row className="App">
 			<Row>
@@ -46,22 +54,22 @@ class App extends Component {
 
 			<PrimerElemento tituloCard="$13865" parrafo="Yearly Income Goal" />
 
-			<PrimerElemento style={naranja} tituloCard="18°" parrafo="París" />
+			<PrimerElemento style={naranja} className="texto-blanco"  tituloCard="18°" parrafo="París" />
 
 			</Row>
 			<Row>
 
-			<SegundoElemento style1={azul} />
-			<TercerElemento style2={azul} parrafoCard2="New visitors" tituloCard2="1.5k"/>
-			<TercerElemento style2={morado} parrafoCard2="Bounce Rate" tituloCard2="50%"/>
+			<SegundoElemento style1={azul} gris={gris}/>
+			<TercerElemento style2={azul} parrafoCard2="New visitors" tituloCard2="1.5k" white={blanco}/>
+			<TercerElemento style2={morado} parrafoCard2="Bounce Rate" tituloCard2="50%" white={blanco}/>
 
 			</Row>
 			<Row>
-			<SegundoElemento style1={rosa} />
+			<SegundoElemento style1={rosa} gris={gris}/>
 
-			<TercerElemento style2={naranja} parrafoCard2="Searchs" tituloCard2="28%" />
+			<TercerElemento style2={naranja} parrafoCard2="Searchs" tituloCard2="28%" white={blanco}/>
 
-			<TercerElemento style2={verde} parrafoCard2="Traffic" tituloCard2="140.5 kb" />
+			<TercerElemento style2={verde} parrafoCard2="Traffic" tituloCard2="140.5 kb" white={blanco}/>
 
 			</Row>
 			</Row>

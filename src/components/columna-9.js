@@ -39,13 +39,14 @@ var SegundoElemento = (function (_Component) {
 
          return _react2['default'].createElement(
             _reactMaterialize.Col,
-            { s: 9, m: 9, className: 'Gran-card' },
+            { s: 9, m: 9, className: 'Gran-card card-panel-modificado' },
             _react2['default'].createElement(
                _reactMaterialize.CardPanel,
                { style: this.props.style1 },
+               _react2['default'].createElement('div', { className: 'mitad-gran' }),
                _react2['default'].createElement(
-                  _reactMaterialize.Row,
-                  { className: 'gris-fondo' },
+                  'div',
+                  { className: 'mitad-gran', style: this.props.gris },
                   _react2['default'].createElement(_parrafoJsx2['default'], { subtituloCard: '15080', textoParrafo: 'Shot Views' }),
                   _react2['default'].createElement(_parrafoJsx2['default'], { subtituloCard: '12000', textoParrafo: 'Likes' }),
                   _react2['default'].createElement(_parrafoJsx2['default'], { subtituloCard: '5100', textoParrafo: 'Comments' })

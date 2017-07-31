@@ -45,7 +45,7 @@ var PrimerElemento = (function (_Component) {
                ),
                _react2['default'].createElement(
                   'p',
-                  null,
+                  { className: 'gris-texto' },
                   this.props.parrafo
                )
             )

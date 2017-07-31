@@ -36,13 +36,13 @@ var ParrafoGranCard = (function (_Component) {
             _reactMaterialize.Col,
             { s: 4, m: 4 },
             _react2['default'].createElement(
-               'h2',
-               null,
+               'h4',
+               { className: 'texto-blanco' },
                this.props.subtituloCard
             ),
             _react2['default'].createElement(
                'p',
-               null,
+               { className: 'gris-texto', style: this.props.colorParrafo },
                this.props.textoParrafo
             )
          );
