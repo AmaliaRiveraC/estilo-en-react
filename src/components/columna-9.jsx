@@ -9,13 +9,14 @@ export default class SegundoElemento extends Component {
 	render(){
 		
 		return(
-			<Col s={9} m={9} className="Gran-card">
+			<Col s={9} m={9} className="Gran-card card-panel-modificado">
 				<CardPanel style={this.props.style1}>
-				<Row className="gris-fondo">
+				<div className="mitad-gran"></div>
+				<div className="mitad-gran" style={this.props.gris}>
 					<Parrafo subtituloCard="15080" textoParrafo="Shot Views"/>
 					<Parrafo subtituloCard="12000" textoParrafo="Likes"/>
 					<Parrafo subtituloCard="5100" textoParrafo="Comments" />
-				</Row>
+				</div>
 				</CardPanel>
 			</Col>
 			

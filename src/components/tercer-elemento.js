@@ -38,17 +38,22 @@ var TercerElemento = (function (_Component) {
             { s: 3, m: 3 },
             _react2['default'].createElement(
                _reactMaterialize.CardPanel,
-               { style: this.props.style2, className: 'mitad' },
+               { style: this.props.style2, className: 'card' },
                _react2['default'].createElement(
-                  'p',
-                  null,
-                  this.props.parrafoCard2
+                  'div',
+                  { className: 'parrafo-card' },
+                  _react2['default'].createElement(
+                     'p',
+                     { className: 'texto-blanco' },
+                     this.props.parrafoCard2
+                  ),
+                  _react2['default'].createElement(
+                     'h5',
+                     { className: 'texto-blanco' },
+                     this.props.tituloCard2
+                  )
                ),
-               _react2['default'].createElement(
-                  'h4',
-                  null,
-                  this.props.tituloCard2
-               )
+               _react2['default'].createElement('div', { className: 'mitad', style: this.props.white })
             )
          );
       }

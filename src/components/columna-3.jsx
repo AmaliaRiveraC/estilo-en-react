@@ -7,7 +7,7 @@ export default class PrimerElemento extends Component {
 			<Col s={3} m={3} >
 				<CardPanel style={this.props.style}>
 					<h3>{this.props.tituloCard}</h3>
-					<p>{this.props.parrafo}</p>
+					<p className="gris-texto">{this.props.parrafo}</p>
 				</CardPanel>
 			</Col>
 		);

@@ -2,6 +2,9 @@
   text-align: center;
 }
 
+body {
+	background-color: #9c9c9c;
+}
 
 
 
@@ -18,19 +21,39 @@
 .Gran-card {
 	height: 50vh;
 	margin: 0;
-	padding: 0;
+	width: 100%;
+	
 }
 
 .mitad-gran {
-	height: 25vh;
+	height: 20vh;
+	margin: 0;
+	width: 100%;
 }
 
 .card {
-	height: 20vh;
+	height: 25vh;
+	width: 100%;
 }
 
+.parrafo-card {
+	height: 10vh;
+	width: 100%;
+}
 .mitad {
-	height: 50%;
+	height: 10vh;
+	padding: 0px;
+	width: 100%;
+	
+}
+
+.card-panel {
+    transition: box-shadow .25s;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+    border-radius: 2px;
+    background-color: #fff;
 }
 
 
@@ -45,4 +68,7 @@
 
 .naranja {
 	background-color: orangered;
+}
+.texto-blanco {
+	color: #FFF;
 }

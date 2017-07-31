@@ -5,8 +5,8 @@ export default class ParrafoGranCard extends Component {
 	render(){
 		return(
 			<Col s={4} m={4}>
-						<h2>{this.props.subtituloCard}</h2>
-						<p>{this.props.textoParrafo}</p>
+						<h4 className="texto-blanco">{this.props.subtituloCard}</h4>
+						<p className="gris-texto" style={this.props.colorParrafo}>{this.props.textoParrafo}</p>
 			</Col>
 		);
 	}
